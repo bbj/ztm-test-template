@@ -1,10 +1,18 @@
+* {
+  /* remove all hidden margins */
+  margin: 0;
+}
 html {
-  box-sizing: border-box; /* prevents padding to add extra width or height to the page */
+  /* anytime we add padding to any elem, it is streching the page */
+  /* if we are already 100% of viewport, and add padding, 
+  it adds more than 100% and force am Horiz schroll bar */
+  box-sizing: border-box; 
 }
 
 body {
   margin: 0;
   min-height: 100vh;
   /* vh: viewport height, full height of the entire window; 
-    will always stretch the height even if the content is smaller  */
+    will always stretch the height even if the content 
+    is smaller  */
 }
